@@ -1,0 +1,11 @@
+footer {
+  margin-top: 60px;
+  border-top: solid;
+  border-color: black;
+}
+footer p {
+  line-height: 200px;
+  text-align: center;
+}
+
+
