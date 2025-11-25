@@ -1,12 +1,11 @@
 {
-  "version": 2,
-  "build": [
+  "builds": [
     {
       "src": "Mathkey.py",
       "use": "@vercel/python"
     }
   ],
-  "route": [
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "/Mathkey.py"
