@@ -4,15 +4,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('Mathkey.html')
+    return 'hello home'
+    #return render_template('Mathkey.html')
 
 @app.route('/api')
 def api():
-    return render_template('Mathkey.html')
+    return 'hello api'
+    #return render_template('Mathkey.html')
 
 @app.route('/Mathkey')
 def Mathkey():
-    return render_template('Mathkey.html')
+    return 'hello mathkey'
+    #return render_template('Mathkey.html')
 
 if __name__ == '__main__':
     app.run()
