@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'hello home'
-    #return render_template('Mathkey.html')
+    #return 'hello home'
+    return render_template('Mathkey.html')
 
 @app.route('/api')
 def api():
