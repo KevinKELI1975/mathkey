@@ -8,7 +8,7 @@
   ],
   "route": [
     {
-      "src": "/(.*)",
+      "src": "MathkeyPage/(.*)",
       "dest": "Mathkey.py"
     }
   ]
