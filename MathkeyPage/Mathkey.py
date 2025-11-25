@@ -3,7 +3,14 @@ from flask import render_template
 app = Flask(__name__)
 
 @app.route('/')
-@app.route('/Mathkey')
+def home():
+    return render_template('Mathkey.html')
+
+@app.route('/api')
+def api():
+    return render_template('Mathkey.html')
+    
+@app.route('/mathkey')
 def Mathkey():
     return render_template('Mathkey.html')
 
