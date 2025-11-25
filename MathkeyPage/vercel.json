@@ -2,14 +2,14 @@
   "version": 2,
   "build": [
     {
-      "src": "MathkeyPage/Mathkey.py",
+      "src": "Mathkey.py",
       "use": "@vercel/python"
     }
   ],
   "route": [
     {
-      "src": "MathkeyPage/(.*)",
-      "dest": "MathkeyPage/Mathkey.py"
+      "src": "/(.*)",
+      "dest": "/Mathkey.py"
     }
   ]
 }
