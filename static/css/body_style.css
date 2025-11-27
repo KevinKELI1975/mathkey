@@ -1,0 +1,93 @@
+.mathkey_info {
+  margin-top: 90px; /* Header Height */
+  display: flex;
+  justify-content: space-evenly;
+}
+.mathkey_info div {
+  width: 40%;
+}
+.product_intro {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.intro_row {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.intro_row h1 {
+  width: 90%;
+  text-align: center;
+  margin-top: 30px;
+}
+.intro_row p {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.intro_row img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.mathkey_type h1 {
+  margin-top: 40px;
+}
+.mathkey_type h2 {
+  border-top: solid;
+  border-color: purple;
+  margin: 40px 10px 5px 10px;
+}
+.mathkey_type ul {
+  margin: 0px 10px 0px 30px;
+}
+.mathkey_type ol {
+  margin: 0px 10px 0px 30px;
+}
+.mathkey_type p {
+  margin: 0px 10px 0px 30px;
+}
+.mathkey_type img {
+  margin-left: 60px;
+}
+
+
+.mathkey_draw h1 {
+  margin-top: 40px;
+}
+.mathkey_draw h2 {
+  border-top: solid;
+  border-color: blue;
+  margin: 40px 10px 5px 10px;
+}
+.mathkey_draw ol {
+  margin: 0px 10px 0px 30px;
+}
+.mathkey_draw img {
+  margin-left: 60px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .info_row {
+    margin: 0px;
+  }
+  .info_row img {
+    border-radius: 10px;
+  }
+  .mathkey_type img {
+    margin-left: 10px;
+    width: 90%;
+  }
+  .mathkey_draw img {
+    margin-left: 10px;
+    width: 90%;
+  }
+}
