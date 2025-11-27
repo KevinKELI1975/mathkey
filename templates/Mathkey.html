@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWTC</title>
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/header_style.css') }}">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/body_style.css') }}">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/footer_style.css') }}">
+  </head>
+  <body>
+    <header>
+      <button class = "menu">&#9776;</button>
+      <h1>Mathkey</h1>
+      <nav>
+      <ul>
+        <li><a href="#">Know Mathkey</a></li>
+        <li><a href="#">Type mathematics</a></li>
+        <li><a href="#">Draw graphics</a></li>
+        <li><a href="#">About SWTC</a></li>
+      </ul>
+      </nav>
+    </header>
+    <main>
+    
+      <!-- PRODUCT INFORMATION -->
+      <section class = "mathkey_info">
+        <div>
+          <p>Mathkey is for people who looks for a simple mathematical note book, it provides full function drawing tools.</br> It saves users data in text format.</br>Your data your control.</p>
+          <p>Mathkey is a standalone application, there is no need to install in your computer and no need to be online.</br> Down load and and create a link to executable.</p>
+          <p>Product Disclaimer</p>
+        </div>
+        <div>
+          <p>Download from here:</p></br>
+          <ol>
+            <li><a href="#">Windows</a></li>
+            <li><a href="#">MacOS</a></li>
+          </ol>
+        </div>
+      </section>
+      <section class = "product_intro">
+        <div class = "intro_row">
+          <img src = "{{ url_for('static', filename = 'img/mutual_help.jpg') }}" alt = "Picture cannot be shown.">
+          <h1>"What You See Is What You Get."</h1>
+          <p>Mathkey provides varieties of format templates for math expressions.</p>
+        </div>
+        <div class = "intro_row">
+          <img src = "{{ url_for('static', filename = 'img/mutual_help.jpg') }}" alt = "Picture cannot be shown.">
+          <h1>"Draw graphics to demonstrate mathematical presentations."</h1>
+          <p>Mathkey provides varieties of format templates for math expressions.</p>
+        </div>
+        <div class = "intro_row">
+          <img src = "{{ url_for('static', filename = 'img/mutual_help.jpg') }}" alt = "Picture cannot be shown.">
+          <h1>"Create your own graphics archive for easy access of repeated graphics."</h1>
+          <p>Mathkey provides varieties of format templates for math expressions.</p>
+        </div>
+        <div class = "intro_row">
+          <img src = "{{ url_for('static', filename = 'img/mutual_help.jpg') }}" alt = "Picture cannot be shown.">
+          <h1>"Automatic File Backup"</h1>
+          <p>Mathkey provides varieties of format templates for math expressions.</p>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <!-- USER MANUAL - TEXTING -->
+      <section class="mathkey_type">
+          <h1>Texting Manual</h1>
+
+          <h2>T.1 Switching between text and math:</h2>
+          <p>
+              Mathkey by default uses italic font as math font and non-italic font as text font. You can switch
+              these two modes by "Text > text" or "Text > math", or t/m buttons.
+          </p>
+          <img src="{{ url_for('static', filename = 'img/text_math.png') }}" alt="Picture cannot be shown.">
+
+          <h2>T.2 Design your own math symbol style:</h2>
+          <p>
+              Mathematic symbols are store in the "func_symbol" folder, you can create your own artistic
+              work by decoration on graphics.
+          </p>
+          <img src="{{ url_for('static', filename = 'img/integral_style.png') }}" alt="Picture cannot be shown.">
+
+          <h2>T.3 Setup page border:</h2>
+          <p>
+              On the canvas, dashed lines are displayed to represent page borders. You can select
+              A3/A4/A5 with portrait or landscape layout. Select borders in "Setup > Page Size" menu.
+          </p></br>
+          <ul>
+              <li>You can increase the page in row by "Setup > Add Page Row".</li>
+              <li>You can increase the page in column by "Setup > Add Page Column".</li>
+          </ul>
+
+          <h2>T.4 Open backup binary ".bak" file:</h2>
+          <p>
+              Mathkey will save your data in text format, it also automatic make a backup in binary file with file
+              extension ".bak". In case you need to open the binary, do it in menu "File > open binary".
+          </p>
+
+          <h2>T.5 Select a section of text:</h2>
+          <ol>
+              <li>Press shift key and keep it down.</li>
+              <li>Click the mouse left key on the first position.</li>
+              <li>Keep press the mouse left key and drag the mouse.</li>
+          </ol>
+          <img src="{{ url_for('static', filename = 'img/select_text.png') }}" alt="Picture cannot be shown.">
+          </br>
+          </br>
+          <p>With a selected text, "Ctrl + X, Ctrl + C" and "Ctrl + V" are used for cut, copy and paste the selected text.</p>
+
+          <h2>T.6 Paste text from clipboard:</h2>
+          <p>
+              When a section of text is copied and stored in clipboard, the text can be pasted into Mathkey editor
+              with "Edit > Copy Clipboard".
+          </p>
+
+          <h2>T.7 High light the empty line:</h2>
+          <p>
+              You can high light an empty line as auxiliary input, do it in  "Text > Highlight Empty".
+          </p>
+          <img src="{{ url_for('static', filename = 'img/highlight_emptyline.png') }}" alt="Picture cannot be shown.">
+      </section>
+      
+
+
+      <!-- USER MANUAL - DRAWING -->
+      <section class="mathkey_draw">
+          <h1>Drawing Manual</h1>
+
+
+          <h2>D.1 Enable grids:</h2>
+          <p>
+              When grid is enabled, mouse will snap on grid point when you click on mouse left button.
+          </p>
+
+
+          <h2>D.2 Snap on vertices of a drawing:</h2>
+          <p>
+              When snapping on vertex is enabled, mouse will snap on vertex point when you click on mouse left button.
+          </p>
+
+          <h2>D.3 Draw polygon, polyline, spline and Bezier curve:</h2>
+          <p>
+              In "Draw >" menu, select polygon / polyline / Bezier / Spline to draw the poly shapes. </br>
+              The maximum number of vertices of a Bezier curve is 7 vertices.
+          </p>
+          <img src="{{ url_for('static', filename = 'img/poly_lines.png') }}" alt="Picture cannot be shown.">
+
+          <h2>D.4 Paste a image snapshot:</h2>
+          <p>
+              Here is how to paste a image snapshot into Mathkey.</br>
+              - Step 1: snapshot a part of screen with windows snapshot tool.</br>
+              - Step 2: "Ctrl + C" to paste the snapshot image.</br>
+          </p>
+          <img src="{{ url_for('static', filename = 'img/paste_snapshot.png') }}" alt="Picture cannot be shown.">
+
+          <h2>D.5 Text and Label objects:</h2>
+          <p>
+              You can create text and label objects from drawing drag and drop list.</br>
+              Here is the difference between these 2 objects.</br>
+              - Text: a multi-line text section that allows you to put math symbols. A text object cannot be rotated.</br>
+              - Label: a character only, single line object to note axes or graphics. A label object can be rotated.</br>
+          </p>
+          <img src="{{ url_for('static', filename = 'img/text_and_label.png') }}" alt="Picture cannot be shown.">
+
+          <h2>D.6 Dimensioning:</h2>
+          <p>
+              Dimensioning object can be created by "Draw > Dimension Label". When a dimension label is first time</br>
+              created, the length will be computed by on-paper length * Dimension Factor, afterwards, it can only be</br>
+              changed manually. Dimension Factor can be changed by "Draw > Dimension Factor" in the menu.
+          </p>
+          <img src="{{ url_for('static', filename = 'img/dimension_label_and_factor.png') }}" alt="Picture cannot be shown.">
+          <p>
+              Here are how you can change the length label and extension.</br>
+              - Select the dimensioning object.
+              - Length text: on the mouse right-button menu, click on "set string".</br>
+          </p>
+          <img src="{{ url_for('static', filename = 'img/set_dimension_string.png') }}" alt="Picture cannot be shown.">
+          <p>
+              - Extension: on the mouse right-button menu, click on "set extension".</br>
+          </p>
+          <img src="{{ url_for('static', filename = 'img/set_dimension_extension.png') }}" alt="Picture cannot be shown.">
+
+          <h2>D.6 Layer management:</h2>
+          <p>
+              You can create / delete layers for graphics, do layer management in "Setup > Layers".</br>
+              - You must have one working layer and only one working layer.</br>
+              - Working layer cannot be deleted.</br>
+              - You can only set current working layer not working layer by setting other layer as working layer.</br>
+              - A layer can only be deleted if it is not working layer and not occupied by any graphics.
+          </p>
+          <img src="{{ url_for('static', filename = 'img/layer_manager.png') }}" alt="Picture cannot be shown.">
+
+          <h2>D.7 Graphics Library:</h2>
+          <p>
+              At left-hand side of Mathkey there are upper and lower windows to display "library" folder archive.</br>
+              The upper window displays folder structure that you can create to classify graphics.</br>
+              The lower window displays graphics stored in the selected folder</br>
+          </p>
+          <img src="{{ url_for('static', filename = 'img/draw_archive.png') }}" alt="Picture cannot be shown.">
+
+          <h2>D.8 Create dwawing element:</h2>
+          <p>
+              You can save a selected graphics or a graphics group into the library, create a graphics item to allow you for drag and drop operation.</br>
+              Below are the steps to follow:</br>
+              1. Select the library folder that you want to put a item.</br>
+              2. Select the group item or a mono item you would like to put in the library.</br>
+              3. Click on righ mouse button and click on "into library...".</br>
+              <img src="{{ url_for('static', filename = 'img/create_library_item.png') }}" alt="Picture cannot be shown."></br>
+              4. Create a bmp icon follow the bmp file name in the txg file, the prefered icon size is 32 x 32 pixels.</br>
+              <img src="{{ url_for('static', filename = 'img/create_icon_txg.png') }}" alt="Picture cannot be shown."></br>
+          </p>
+
+      </section>
+      
+    </main>
+    <footer>
+      <p>Copyright 2025 SWTC All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+Show length of a line</br>
+Trim a draw oabject</br>
+Mirror a draw object</br>
+Circular a draw object</br>
+
+
