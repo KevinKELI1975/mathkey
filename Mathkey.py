@@ -14,8 +14,8 @@ def api():
 
 @app.route('/Mathkey')
 def Mathkey():
-    return 'hello mathkey'
-    #return render_template('mathkey_homepage.html')
+    #return 'hello mathkey'
+    return render_template('mathkey_homepage.html')
 
 if __name__ == '__main__':
     app.run()
